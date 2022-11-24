@@ -6,8 +6,8 @@ import ApiDisplayDays from "../pages/ApiDisplayDays";
 import { Link } from "react-router-dom";
 import "./weather.css";
 import getIcon from "./utils/getIcon"
-// const API_KEY = "22a57af1d2347f83a9a3d2fa998e4a91"
-// const BASE_URL = "https://api.openweathermap.org/data/2.5"
+const API_KEY = "22a57af1d2347f83a9a3d2fa998e4a91"
+const BASE_URL = "https://api.openweathermap.org/data/2.5"
 
 
 const check = (str) =>
