@@ -1,0 +1,54 @@
+[
+    {
+      "id": 0,
+      "name": "Rytas",
+      "btName": "R",
+      "msg": "Dabar yra rytas",
+      "color": "green"
+    },
+    {
+      "id": 1,
+      "name": "Diena",
+      "btName": "D",
+      "msg": "Dabar yra diena",
+      "color": "red"
+    },
+    {
+      "id": 3,
+      "name": "Vakaras",
+      "btName": "V",
+      "msg": "Dabar yra vakaras",
+      "color": "blue"
+    },
+    {
+      "id": 4,
+      "name": "Labanaktis",
+      "btName": "N",
+      "msg": "Dabar yra naktis",
+      "color": "palevioletred"
+    },
+    {
+      "id": 5,
+      "name": "Vidurnaktis",
+      "btName": "VD",
+      "msg": "Dabar yra vidurnaktis",
+      "color": "white"
+    },
+    {
+      "id": 6,
+      "name": "Pietus",
+      "btName": "PT",
+      "msg": "Dabar yra pietus",
+      "color": "orange"
+    },
+    {
+        "id": 7,
+        "name": "ffff",
+        "btName": "PT",
+        "msg": "Dabar yra pietus",
+        "color": "green"
+      }
+  
+
+
+  ]
