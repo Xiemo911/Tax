@@ -29,7 +29,7 @@ class Weather extends React.Component {
 
   getApiData = async () => {
     const apiUrl = await axios.get(
-      `/currentWeather/`
+      /currentWeather/
     );
     console.log("API DATA", apiUrl.data);
     this.setState(
