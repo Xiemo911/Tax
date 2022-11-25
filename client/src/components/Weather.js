@@ -30,7 +30,7 @@ class Weather extends React.Component {
 
   getApiData = async () => {
     const apiUrl = await axios.get(
-      `/api/get_forecast`
+      `/api/get_weather`
     );
     console.log("API DATA", apiUrl.data);
     this.setState(
@@ -45,7 +45,7 @@ class Weather extends React.Component {
 
   getApiDataDays = async () => {
     const apiUrlDays = await axios.get(
-      `${BASE_URL}/forecast?lat=55.7348&lon=24.3575&cnt=54&units=metric&appid=${API_KEY}`
+      `/api/get_forecast`
     );
     console.log("API DATA DAYS", apiUrlDays.data);
     this.setState(
