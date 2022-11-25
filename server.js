@@ -17,10 +17,9 @@ const apiData = async () => {
   const getApiData = await axios.get(`${BASE_URL}/weather?lat=55.7348&lon=24.3575&units=metric&appid=${API_KEY}`, {
     headers: { "accept-encoding": "*" },
   });
-  const dt = await getApiData.data;
-  console.log(dt)
-  return dt;
+  return await getApiData;
 };
+
 app.get("/", async(req, res) => {
   const k = await apiData()
   res.send(k);
