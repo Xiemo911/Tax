@@ -18,11 +18,11 @@ const apiData = async () => {
   const getApiData = await axios.get(`${BASE_URL}/weather?lat=55.7348&lon=24.3575&units=metric&appid=${API_KEY}`, {
     headers: { "accept-encoding": "*" },
   });
-  return await getApiData;
+  return (getApiData);
 };
 
 app.get("/", async(req, res) => {
   const k = await apiData()
-  res.send(k);
+  res.send(this.setState({data: k.data}));
 });
 app.listen(port, () => console.log("Example app is listening on port 5000."));
