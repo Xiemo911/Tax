@@ -2,8 +2,9 @@ import express from "express";
 import path from "path";
 const port = process.env.PORT || 5000;
 const app = express();
-const API_KEY = "22a57af1d2347f83a9a3d2fa998e4a91"
-const BASE_URL = "https://api.openweathermap.org/data/2.5"
+const API_KEY = "22a57af1d2347f83a9a3d2fa998e4a91";
+const BASE_URL = "https://api.openweathermap.org/data/2.5";
+import axios from "axios";
 
 // app.use(express.static(path.join(__dirname, 'client/build')));
 if (process.env.NODE_ENV === "production") {
