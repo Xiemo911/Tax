@@ -21,7 +21,7 @@ const apiData = async () => {
   console.log(dt)
   return dt;
 };
-app.get("/currentWeather/", async(req, res) => {
+app.get("/", async(req, res) => {
   const k = await apiData()
   res.send(k);
 });
