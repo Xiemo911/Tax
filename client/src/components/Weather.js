@@ -10,6 +10,7 @@ const API_KEY = "22a57af1d2347f83a9a3d2fa998e4a91"
 const BASE_URL = "https://api.openweathermap.org/data/2.5"
 
 
+
 const check = (str) =>
   localStorage.getItem(str) === null
     ? []
@@ -29,7 +30,7 @@ class Weather extends React.Component {
 
   getApiData = async () => {
     const apiUrl = await axios.get(
-      fetch(`/currentWeather`)
+      `/currentWeather`
     );
     console.log("API DATA", apiUrl.data);
     this.setState(
