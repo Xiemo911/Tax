@@ -44,7 +44,7 @@ export default function ApiDisplay(props) {
         return(
         <div key={`i${ind}`} style={{ margin: "auto", paddingBottom: "10px" }}>
           <h5 style={{ margin: "auto" }}>{i.dt_txt.split(" ")[1].slice(0, -3)}</h5>
-          <h5 style={{ margin: "auto" }}>{i.temp}</h5>
+          <h5 style={{ margin: "auto" }}>{i.main.temp}</h5>
         </div>
       )})}
 

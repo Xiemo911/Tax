@@ -101,12 +101,12 @@ class Weather extends React.Component {
 
   render() {
     const st = this.state;
-    const hourlyDD = Object.keys(st.hourlyDay).length == 0;
-    const tr = Object.keys(st.data).length == 0;
-    const tp = Object.keys(st.multiDay).length == 0;
+    const hourlyDD = Object.keys(st.hourlyDay).length === 0;
+    const tr = Object.keys(st.data).length === 0;
+    const tp = Object.keys(st.multiDay).length === 0;
     const i = st.data;
     const d = st.dataDays;
-
+    const tS = toString()
     return (
       <div
         style={{
