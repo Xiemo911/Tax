@@ -9,7 +9,7 @@ import { updateWeather } from "./server/repositories/WeatherRepository.js";
 import { updateForecast } from "./server/repositories/ForecastRepository.js";
 import connect from "./server/configs/connect.js";
 
-connect
+connect;
 
 const update = async () => {
   updateWeather();

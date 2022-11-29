@@ -106,7 +106,6 @@ class Weather extends React.Component {
     const tp = Object.keys(st.multiDay).length === 0;
     const i = st.data;
     const d = st.dataDays;
-    const tS = toString()
     return (
       <div
         style={{
@@ -125,16 +124,16 @@ class Weather extends React.Component {
           className="mymenu ui two item menu "
         >
           <Link className="item" style={{ margin: "auto" }} to="/">
-            {" "}
-            Current Forecast{" "}
+           
+            Current Forecast
           </Link>
           <Link
             className="item"
             style={{ margin: "auto" }}
             to="/ApiDisplayDays"
           >
-            {" "}
-            5 Day Forecast{" "}
+            
+            5 Day Forecast
           </Link>
         </div>
         <Routes>
