@@ -32,13 +32,8 @@ sr = (prop) =>{
 <AddFriendButton/>
 <LikeButton/>
 </div>
-<div style={{display: "flex" ,margin: "auto"}}>
-    
+<div style={{display: "flex" ,margin: "auto"}}>   
     <SearchButton changeSearch={this.sr}/>
-    
-    
-    
-    
      </div>
 <div style={{display: "flex" ,margin: "auto"}}>
 <FacebookButton/>
@@ -46,9 +41,6 @@ sr = (prop) =>{
 <LinkedInButton/>
 <GoogleButton/>
 <SettingsButton/>
-
-
-
 </div>
 
 

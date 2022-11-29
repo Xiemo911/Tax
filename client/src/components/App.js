@@ -6,11 +6,6 @@ class App extends React.Component {
   componentDidMount() {}
 
   btn = () => {
-    /*
-        this.setState(state => {
-            if(state.id !== this.dat.length-1){ return {id: state.id + 1}}
-             else {return {id: 0}}
-         })*/
     this.setState({
       id: this.state.id !== data.length - 1 ? this.state.id + 1 : 0,
     });

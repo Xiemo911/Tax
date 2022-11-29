@@ -1,7 +1,7 @@
 import React from "react";
 
 const getIc = (id) => {
-  switch (parseInt(id.charAt(0))) {
+  switch (id.charAt(0)) {
     case 2:
       return "http://openweathermap.org/img/wn/11d@2x.png";
     case 3:
@@ -59,7 +59,7 @@ export default function ApiDisplayDays(props) {
               <h4 style={{ marginLeft: "0.5rem" }}>{i.main.temp}°</h4>
               <img
                 style={{ width: "50%", height: "50%", marginRight: "10px" }}
-                src={getIc(i.weather[0].id.toString())}
+                src={getIc(props.ico)}
               />
               <h5 style={{ marginLeft: "1.1rem" }}>
                 {i.dt_txt.split(/-| /)[2]}

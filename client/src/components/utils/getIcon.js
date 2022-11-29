@@ -1,5 +1,5 @@
 export default function getIcon(id) {
-  switch (parseInt(id.charAt(0))) {
+  switch (id.charAt(0)) {
     case 2:
       return {
         ico: "http://openweathermap.org/img/wn/11d@2x.png",

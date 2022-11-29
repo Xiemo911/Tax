@@ -5,11 +5,9 @@ import ApiDisplay from "../pages/ApiDisplay";
 import ApiDisplayDays from "../pages/ApiDisplayDays";
 import { Link } from "react-router-dom";
 import "./weather.css";
-import getIcon from "./utils/getIcon"
-const API_KEY = "22a57af1d2347f83a9a3d2fa998e4a91"
-const BASE_URL = "https://api.openweathermap.org/data/2.5"
-
-
+import getIcon from "./utils/getIcon";
+const API_KEY = "22a57af1d2347f83a9a3d2fa998e4a91";
+const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
 const check = (str) =>
   localStorage.getItem(str) === null
@@ -29,9 +27,7 @@ class Weather extends React.Component {
   };
 
   getApiData = async () => {
-    const apiUrl = await axios.get(
-      `/api/get_weather`
-    );
+    const apiUrl = await axios.get(`/api/get_weather`);
     console.log("API DATA", apiUrl.data);
     this.setState(
       {
@@ -44,9 +40,7 @@ class Weather extends React.Component {
   };
 
   getApiDataDays = async () => {
-    const apiUrlDays = await axios.get(
-      `/api/get_forecast`
-    );
+    const apiUrlDays = await axios.get(`/api/get_forecast`);
     console.log("API DATA DAYS", apiUrlDays.data);
     this.setState(
       {
@@ -59,12 +53,10 @@ class Weather extends React.Component {
   };
 
   decideIcon = () => {
-    const id = this.state.data.weather[0].id.toString();
-    const {bg, ico} = getIcon(id)
-    this.setState({bg, ico})
+    const id = this.state.data.ico;
+    const { bg, ico } = getIcon(id);
+    this.setState({ bg, ico });
   };
-
-  
 
   dataForEachDay = async () => {
     const datD = Object.keys(this.state.dataDays).length == 0;
@@ -78,23 +70,23 @@ class Weather extends React.Component {
             res.push(day);
           }
         });
-    this.setState({ multiDay: res }, () => {
-    });
+    this.setState({ multiDay: res }, () => {});
   };
 
-  
   getSameDay = async (compare) => {
     let mapped = this.state.dataDays.list.filter(
       (day) => day.dt_txt.split(/-| /)[2] == compare
     );
-    await this.setState({ hourlyDay: mapped }, () => {
-    });
+    await this.setState({ hourlyDay: mapped }, () => {});
   };
 
   hoursFirstDay = async () => {
-    let mpp = this.state.dataDays.list.filter(day => day.dt_txt.split(/-| /)[2] ==
-     this.state.dataDays.list[0].dt_txt.split(/-| /)[2])
-      this.setState({ firstDayHourly: mpp })
+    let mpp = this.state.dataDays.list.filter(
+      (day) =>
+        day.dt_txt.split(/-| /)[2] ==
+        this.state.dataDays.list[0].dt_txt.split(/-| /)[2]
+    );
+    this.setState({ firstDayHourly: mpp });
   };
 
   initState = async () => {
@@ -110,7 +102,7 @@ class Weather extends React.Component {
   }
 
   render() {
-    const st = this.state
+    const st = this.state;
     const hourlyDD = Object.keys(st.hourlyDay).length == 0;
     const tr = Object.keys(st.data).length == 0;
     const tp = Object.keys(st.multiDay).length == 0;
@@ -157,14 +149,14 @@ class Weather extends React.Component {
                 <ApiDisplay
                   name={i.name}
                   dt={st.date}
-                  weather={i.weather[0].main}
-                  temp={i.main.temp}
-                  temp_max={i.main.temp_max}
-                  temp_min={d.list[0].main.temp_min}
-                  humidity={i.main.humidity}
-                  pressure={i.main.pressure}
-                  sea_level={i.main.sea_level}
-                  feels_like={i.main.feels_like}
+                  weather={i.weather}
+                  temp={i.temp}
+                  temp_max={i.temp_max}
+                  temp_min={i.temp_min}
+                  humidity={i.humidity}
+                  pressure={i.pressure}
+                  sea_level={i.sea_level}
+                  feels_like={i.feels_like}
                   ico={st.ico}
                   bg={st.bg}
                   firstDayHourly={st.firstDayHourly}
@@ -182,15 +174,14 @@ class Weather extends React.Component {
                   bg={st.bg}
                   ico={st.ico}
                   dt={st.date}
-                  name={d.city.name}
+                  name={i.name}
                   weather={d.list[0].weather[0].main}
-                  temp={i.main.temp}
-                  temp_max={i.main.temp_max}
-                  temp_min={d.list[0].main.temp_min}
+                  temp={i.temp}
+                  temp_max={i.temp_max}
+                  temp_min={i.temp_min}
                   hourly={this.getSameDay}
                   sameDay={st.multiDay}
                   hourlyDataArr={hourlyDD ? [] : st.hourlyDay}
-                  
                 />
               )
             }
