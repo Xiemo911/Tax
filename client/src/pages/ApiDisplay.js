@@ -15,7 +15,7 @@ export default function ApiDisplay(props) {
         <div style={{ margin: "auto" }}>
           <h1>{props.name}</h1>
           <h3>{props.dt.split(" ")[4].slice(0, -3)}</h3>
-          <img style={{}} src={props.ico} />
+          <img src={props.ico} />
           <div>{props.weather}</div>
         </div>
 
@@ -44,7 +44,7 @@ export default function ApiDisplay(props) {
         return(
         <div key={`i${ind}`} style={{ margin: "auto", paddingBottom: "10px" }}>
           <h5 style={{ margin: "auto" }}>{i.dt_txt.split(" ")[1].slice(0, -3)}</h5>
-          <h5 style={{ margin: "auto" }}>{i.main.temp}</h5>
+          <h5 style={{ margin: "auto" }}>{i.temp}</h5>
         </div>
       )})}
 

@@ -6,8 +6,6 @@ import ApiDisplayDays from "../pages/ApiDisplayDays";
 import { Link } from "react-router-dom";
 import "./weather.css";
 import getIcon from "./utils/getIcon";
-const API_KEY = "22a57af1d2347f83a9a3d2fa998e4a91";
-const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
 const check = (str) =>
   localStorage.getItem(str) === null
@@ -59,7 +57,7 @@ class Weather extends React.Component {
   };
 
   dataForEachDay = async () => {
-    const datD = Object.keys(this.state.dataDays).length == 0;
+    const datD = Object.keys(this.state.dataDays).length === 0;
     let res = [];
     let compr = this.state.dataDays.list[0].dt_txt.split(/-| /)[2];
     datD
@@ -77,7 +75,7 @@ class Weather extends React.Component {
     let mapped = this.state.dataDays.list.filter(
       (day) => day.dt_txt.split(/-| /)[2] == compare
     );
-    await this.setState({ hourlyDay: mapped }, () => {});
+    this.setState({ hourlyDay: mapped }, () => {});
   };
 
   hoursFirstDay = async () => {
