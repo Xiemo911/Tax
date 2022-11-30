@@ -99,7 +99,7 @@ class Weather extends React.Component {
     this.initState();
   }
 
- async render() {
+ render() {
     const st = this.state;
     const hourlyDD = Object.keys(st.hourlyDay).length === 0;
     const tr = Object.keys(st.data).length === 0;
