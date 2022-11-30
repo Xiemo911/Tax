@@ -112,9 +112,6 @@ class Weather extends React.Component {
   return(
 this.state.isLoading ?  <div>Loading</div> : 
 
-
-   
-    
       <div
         style={{
           marginTop: "5rem",
