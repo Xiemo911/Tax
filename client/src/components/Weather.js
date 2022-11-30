@@ -22,6 +22,7 @@ class Weather extends React.Component {
     multiDay: [],
     hourlyDay: [],
     firstDayHourly: [],
+    isLoading: true
   };
 
   getApiData = async () => {
@@ -30,6 +31,7 @@ class Weather extends React.Component {
     this.setState(
       {
         data: apiUrl.data,
+        isLoading: false
       },
       () => {
         localStorage.setItem("data", JSON.stringify(this.state.data));
@@ -43,6 +45,7 @@ class Weather extends React.Component {
     this.setState(
       {
         dataDays: apiUrlDays.data,
+        isLoading: false
       },
       () => {
         localStorage.setItem("dataDays", JSON.stringify(this.state.dataDays));
@@ -91,7 +94,7 @@ class Weather extends React.Component {
     this.getApiData();
     this.getApiDataDays();
     this.decideIcon();
-    await this.dataForEachDay();
+    this.dataForEachDay();
     this.hoursFirstDay();
   };
 
@@ -100,13 +103,18 @@ class Weather extends React.Component {
   }
 
  render() {
-    const st = this.state;
-    const hourlyDD = Object.keys(st.hourlyDay).length === 0;
-    const tr = Object.keys(st.data).length === 0;
-    const tp = Object.keys(st.multiDay).length === 0;
-    const i = st.data;
-    const d = st.dataDays;
-    return (
+  const st = this.state;
+  const hourlyDD = Object.keys(st.hourlyDay).length === 0;
+  const tr = Object.keys(st.data).length === 0;
+  const tp = Object.keys(st.multiDay).length === 0;
+  const i = st.data;
+  const d = st.dataDays;
+  return(
+this.state.isLoading ?  <div>Loading</div> : 
+
+
+   
+    
       <div
         style={{
           marginTop: "5rem",
@@ -186,7 +194,7 @@ class Weather extends React.Component {
           />
         </Routes>
       </div>
-    );
+  )
   }
 }
 
