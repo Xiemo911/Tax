@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function ApiDisplay(props) {
-  
+  console.log(props)
   return (
     <div
       style={{
