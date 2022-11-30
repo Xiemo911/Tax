@@ -20,6 +20,7 @@ const getIc = (id) => {
 
 
 export default function ApiDisplayDays(props) {
+  console.log(props)
   return (
     <div
       style={{

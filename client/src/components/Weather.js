@@ -75,7 +75,7 @@ class Weather extends React.Component {
     let mapped = this.state.dataDays.list.filter(
       (day) => day.dt_txt.split(/-| /)[2] == compare
     );
-    this.setState({ hourlyDay: mapped }, () => {});
+    this.setState({ hourlyDay: mapped });
   };
 
   hoursFirstDay = async () => {
@@ -157,6 +157,7 @@ class Weather extends React.Component {
                   ico={st.ico}
                   bg={st.bg}
                   firstDayHourly={st.firstDayHourly}
+
                 />
               )
             }
@@ -178,7 +179,7 @@ class Weather extends React.Component {
                   temp_min={i.temp_min}
                   hourly={this.getSameDay}
                   sameDay={st.multiDay}
-                  hourlyDataArr={hourlyDD ? [] : st.hourlyDay}
+                  hourlyDataArr={hourlyDD ? st.firstDayHourly : st.hourlyDay}
                 />
               )
             }
