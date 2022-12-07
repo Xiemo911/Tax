@@ -1,8 +1,25 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function ApiDisplay(props) {
   console.log(props)
   return (
+    <div>
+      <div style={{
+            margin: "auto",
+            borderTopRightRadius: "1rem",
+            borderTopLeftRadius: "1rem",
+          }}
+          className="mymenu ui two item menu "
+        >
+          <Link className="item" style={{ margin: "auto" }} to="/ApiDisplay">
+            Current Forecast
+          </Link>
+          <Link className="item" style={{ margin: "auto" }}  to="/ApiDisplayDays">
+            5 Day Forecast
+          </Link>
+          </div>
     <div
       style={{
         margin: "auto",
@@ -51,6 +68,10 @@ export default function ApiDisplay(props) {
 
 
       </div>
+    </div>
+    <div className="mymenu ui one item menu ">
+          <button className="item" onClick={props.handleLogOut}>Log Out</button>
+</div>
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const getIc = (id) => {
   switch (id.charAt(0)) {
@@ -22,6 +24,27 @@ const getIc = (id) => {
 export default function ApiDisplayDays(props) {
   console.log(props)
   return (
+    <div>
+      <div style={{
+            margin: "auto",
+            borderTopRightRadius: "1rem",
+            borderTopLeftRadius: "1rem",
+          }}
+          className="mymenu ui two item menu "
+        >
+<Link className="item" style={{ margin: "auto" }} to="/ApiDisplay">
+           
+           Current Forecast
+         </Link>
+         <Link
+           className="item"
+           style={{ margin: "auto" }}
+           to="/ApiDisplayDays"
+         >
+           
+           5 Day Forecast
+         </Link>
+</div>
     <div
       style={{
         margin: "auto",
@@ -81,5 +104,22 @@ export default function ApiDisplayDays(props) {
         })}
       </div>
     </div>
+    </div>
   );
 }
+
+
+
+
+
+{/* <div
+          style={{
+            margin: "auto",
+            borderTopRightRadius: "1rem",
+            borderTopLeftRadius: "1rem",
+          }}
+          className="mymenu ui two item menu "
+        >
+          
+
+        </div> */}

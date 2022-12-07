@@ -3,8 +3,7 @@ import path from "path";
 const port = process.env.PORT || 5000;
 const app = express();
 import weatherRoutes from "./server/routes/weatherRoutes.js";
-const API_KEY = "22a57af1d2347f83a9a3d2fa998e4a91";
-const BASE_URL = "https://api.openweathermap.org/data/2.5";
+import LoginRoutes from "./server/routes/LoginRoutes.js";
 import { updateWeather } from "./server/repositories/WeatherRepository.js";
 import { updateForecast } from "./server/repositories/ForecastRepository.js";
 import connect from "./server/configs/connect.js";
@@ -21,6 +20,7 @@ const time = () => {
 };
 time();
 
+LoginRoutes(app);
 weatherRoutes(app);
 // app.use(express.static(path.join(__dirname, 'client/build')));
 if (process.env.NODE_ENV === "production") {
