@@ -22,7 +22,6 @@ time();
 
 LoginRoutes(app);
 weatherRoutes(app);
-// app.use(express.static(path.join(__dirname, 'client/build')));
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join("client/build")));
   app.get("*", (req, res) => {
