@@ -1,7 +1,7 @@
 import express from "express";
 import path from "path";
-const port = "https://backend-6zgk.onrender.com"
-// const port = process.env.PORT || 5000;
+
+const port = process.env.PORT;
 const app = express();
 import weatherRoutes from "./server/routes/weatherRoutes.js";
 import LoginRoutes from "./server/routes/LoginRoutes.js";
