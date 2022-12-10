@@ -1,0 +1,18 @@
+[
+{
+"status":  "Single",
+"abbreviation": "S"
+},
+{
+"status":  "Married Filing Joitly",
+"abbreviation": "MFJ" 
+},
+{
+"status":  "Married Filing Separately",
+"abbreviation":"MFS"
+},
+{
+"status": "Qualified Widow(er)",
+"abbreviation":"QW"
+}
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "state": "Alabama",
+    "abbreviation": "AL",
+    "lowestIncomeTaxBracket": "0.0200",
+    "highestIncomeTaxBracket": "0.0500"
+  },
+  {
+    "state": "Alaska",
+    "abbreviation": "AK",
+    "lowestIncomeTaxBracket": "0",
+    "highestIncomeTaxBracket": "0"
+  },
+  {
+    "state": "Arizona",
+    "abbreviation": "AZ",
+    "lowestIncomeTaxBracket": "0.0259",
+    "highestIncomeTaxBracket": "0.0450"
+  },
+  {
+    "state": "Arkansas",
+    "abbreviation": "AR",
+    "lowestIncomeTaxBracket": "0.0200",
+    "highestIncomeTaxBracket": "0.0550"
+  },
+  {
+    "state": "California",
+    "abbreviation": "CA",
+    "lowestIncomeTaxBracket": "0.0100",
+    "highestIncomeTaxBracket": "0.1330"
+  },
+  {
+    "state": "Colorado",
+    "abbreviation": "CO",
+    "lowestIncomeTaxBracket": "0.0455",
+    "highestIncomeTaxBracket": "0.0455"
+  },
+  {
+    "state": "Connecticut",
+    "abbreviation": "CT",
+    "lowestIncomeTaxBracket": "0.0300",
+    "highestIncomeTaxBracket": "0.0699"
+  },
+  {
+    "state": "Delaware",
+    "abbreviation": "DE",
+    "lowestIncomeTaxBracket": "0.0220",
+    "highestIncomeTaxBracket": "0.0660"
+  },
+  {
+    "state": "Florida",
+    "abbreviation": "FL",
+    "lowestIncomeTaxBracket": "0",
+    "highestIncomeTaxBracket": "0"
+  },
+  {
+    "state": "Georgia",
+    "abbreviation": "GA",
+    "lowestIncomeTaxBracket": "0.0100",
+    "highestIncomeTaxBracket": "0.0575"
+  },
+  {
+    "state": "Hawaii",
+    "abbreviation": "HI",
+    "lowestIncomeTaxBracket": "0.0140",
+    "highestIncomeTaxBracket": "0.1100"
+  },
+  {
+    "state": "Idaho",
+    "abbreviation": "ID",
+    "lowestIncomeTaxBracket": "0.0100",
+    "highestIncomeTaxBracket": "0.0600"
+  },
+  {
+    "state": "Illinois",
+    "abbreviation": "IL",
+    "lowestIncomeTaxBracket": "0.0495",
+    "highestIncomeTaxBracket": "0.0495"
+  },
+  {
+    "state": "Indiana",
+    "abbreviation": "IN",
+    "lowestIncomeTaxBracket": "0.0323",
+    "highestIncomeTaxBracket": "0.0323"
+  },
+  {
+    "state": "Iowa",
+    "abbreviation": "IA",
+    "lowestIncomeTaxBracket": "0.0033",
+    "highestIncomeTaxBracket": "0.0853"
+  },
+  {
+    "state": "Kansas",
+    "abbreviation": "KS",
+    "lowestIncomeTaxBracket": "0.0310",
+    "highestIncomeTaxBracket": "0.0570"
+  },
+  {
+    "state": "Kentucky",
+    "abbreviation": "KY",
+    "lowestIncomeTaxBracket": "0.0500",
+    "highestIncomeTaxBracket": "0.0500"
+  },
+  {
+    "state": "Louisiana",
+    "abbreviation": "LA",
+    "lowestIncomeTaxBracket": "0.0185",
+    "highestIncomeTaxBracket": "0.0425"
+  },
+  {
+    "state": "Maine",
+    "abbreviation": "ME",
+    "lowestIncomeTaxBracket": "0.0580",
+    "highestIncomeTaxBracket": "0.0715"
+  },
+
+  {
+    "state": "Massachusetts",
+    "abbreviation": "MA",
+    "lowestIncomeTaxBracket": "0.0500",
+    "highestIncomeTaxBracket": "0.0500"
+  },
+  {
+    "state": "Michigan",
+    "abbreviation": "MI",
+    "lowestIncomeTaxBracket": "0.0425",
+    "highestIncomeTaxBracket": "0.0425"
+  },
+  {
+    "state": "Minnesota",
+    "abbreviation": "MN",
+    "lowestIncomeTaxBracket": "0.0535",
+    "highestIncomeTaxBracket": "0.0985"
+  },
+  {
+    "state": "Mississippi",
+    "abbreviation": "MS",
+    "lowestIncomeTaxBracket": "0.0400",
+    "highestIncomeTaxBracket": "0.0500"
+  },
+  {
+    "state": "Missouri",
+    "abbreviation": "MO",
+    "lowestIncomeTaxBracket": "0.0150",
+    "highestIncomeTaxBracket": "0.0540"
+  },
+  {
+    "state": "Montana",
+    "abbreviation": "MT",
+    "lowestIncomeTaxBracket": "0.0100",
+    "highestIncomeTaxBracket": "0.0675"
+  },
+  {
+    "state": "Nebraska",
+    "abbreviation": "NE",
+    "lowestIncomeTaxBracket": "0.0246",
+    "highestIncomeTaxBracket": "0.0684"
+  },
+  {
+    "state": "Nevada",
+    "abbreviation": "NV",
+    "lowestIncomeTaxBracket": "0",
+    "highestIncomeTaxBracket": "0"
+  },
+
+  {
+    "state": "New Jersey",
+    "abbreviation": "NJ",
+    "lowestIncomeTaxBracket": "0.0140",
+    "highestIncomeTaxBracket": "0.1075"
+  },
+  {
+    "state": "New Mexico",
+    "abbreviation": "NM",
+    "lowestIncomeTaxBracket": "0.0170",
+    "highestIncomeTaxBracket": "0.0590"
+  },
+  {
+    "state": "New York",
+    "abbreviation": "NY",
+    "lowestIncomeTaxBracket": "0.0400",
+    "highestIncomeTaxBracket": "0.1090"
+  },
+  {
+    "state": "North Carolina",
+    "abbreviation": "NC",
+    "lowestIncomeTaxBracket": "0.0499",
+    "highestIncomeTaxBracket": "0.0499"
+  },
+  {
+    "state": "North Dakota",
+    "abbreviation": "ND",
+    "lowestIncomeTaxBracket": "0.0110",
+    "highestIncomeTaxBracket": "0.0290"
+  },
+  {
+    "state": "Ohio",
+    "abbreviation": "OH",
+    "lowestIncomeTaxBracket": "0.0277",
+    "highestIncomeTaxBracket": "0.0399"
+  },
+  {
+    "state": "Oklahoma",
+    "abbreviation": "OK",
+    "lowestIncomeTaxBracket": "0.0025",
+    "highestIncomeTaxBracket": "0.0475"
+  },
+  {
+    "state": "Oregon",
+    "abbreviation": "OR",
+    "lowestIncomeTaxBracket": "0.0475",
+    "highestIncomeTaxBracket": "0.0990"
+  },
+  {
+    "state": "Pennsylvania",
+    "abbreviation": "PA",
+    "lowestIncomeTaxBracket": "0.0307",
+    "highestIncomeTaxBracket": "0.0307"
+  },
+  {
+    "state": "Rhode Island",
+    "abbreviation": "RI",
+    "lowestIncomeTaxBracket": "0.0375",
+    "highestIncomeTaxBracket": "0.0599"
+  },
+  {
+    "state": "South Carolina",
+    "abbreviation": "SC",
+    "lowestIncomeTaxBracket": "0",
+    "highestIncomeTaxBracket": "0.0700"
+  },
+  {
+    "state": "South Dakota",
+    "abbreviation": "SD",
+    "lowestIncomeTaxBracket": "0",
+    "highestIncomeTaxBracket": "0"
+  },
+  {
+    "state": "Tennessee",
+    "abbreviation": "TN",
+    "lowestIncomeTaxBracket": "0",
+    "highestIncomeTaxBracket": "0"
+  },
+  {
+    "state": "Texas",
+    "abbreviation": "TX",
+    "lowestIncomeTaxBracket": "0",
+    "highestIncomeTaxBracket": "0"
+  },
+  {
+    "state": "Utah",
+    "abbreviation": "UT",
+    "lowestIncomeTaxBracket": "0.0495",
+    "highestIncomeTaxBracket": "0.0495"
+  },
+  {
+    "state": "Vermont",
+    "abbreviation": "VT",
+    "lowestIncomeTaxBracket": "0.0335",
+    "highestIncomeTaxBracket": "0.0875"
+  },
+  {
+    "state": "Virginia",
+    "abbreviation": "VA",
+    "lowestIncomeTaxBracket": "0.0200",
+    "highestIncomeTaxBracket": "0.0575"
+  },
+  {
+    "state": "Washington",
+    "abbreviation": "WA",
+    "lowestIncomeTaxBracket": "0",
+    "highestIncomeTaxBracket": "0.0700"
+  },
+  {
+    "state": "West Virginia",
+    "abbreviation": "WV",
+    "lowestIncomeTaxBracket": "0.0300",
+    "highestIncomeTaxBracket": "0.0650"
+  },
+  {
+    "state": "Wisconsin",
+    "abbreviation": "WI",
+    "lowestIncomeTaxBracket": "0.0354",
+    "highestIncomeTaxBracket": "0.0765"
+  },
+  {
+    "state": "Wyoming",
+    "abbreviation": "WY",
+    "lowestIncomeTaxBracket": "0",
+    "highestIncomeTaxBracket": "0"
+  }
+]

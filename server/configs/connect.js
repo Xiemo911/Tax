@@ -1,6 +1,7 @@
 
 import mongoose from "mongoose";
 const conn_str = `mongodb+srv://histeel:6984@cluster0.u3l9bic.mongodb.net/?retryWrites=true&w=majority`;
+mongoose.set('strictQuery', false)
 export default mongoose.connect(
   conn_str,
   {

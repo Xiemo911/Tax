@@ -44,6 +44,9 @@ app.use(
         }
       );
       
+
+
+
       app.get("/api/user", (req, res, next) => {
         console.log("===== user!!======");
         console.log(req.user);
