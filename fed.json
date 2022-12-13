@@ -1,54 +1,188 @@
 [
+ 
     {
         "status":  "Single",
         "abbreviation": "S",
-        "10": 11000,
-        "12": 44725,
-        "22": 95375,
-        "24": 182100,
-        "32": 231250,
-        "35": 578125,
-        "37": 578126
+        "bracket": {"min": 0, "max": 11000  } , 
+        "rate": "10"
+        
+    },
+    {
+        "status":  "Single",
+        "abbreviation": "S",
+        "bracket": {"min": 11001, "max": 44725  },
+        "rate": "12"
+      
+
+    },
+    {
+        "status":  "Single",
+        "abbreviation": "S",
+        "bracket": {"min": 44726, "max": 95375 },
+        "rate": "22"  
+
+    },
+    {
+        "status":  "Single",
+        "abbreviation": "S",
+        "bracket": {"min": 95376, "max": 182100 },
+        "rate": "24"
+    },
+    {
+        "status":  "Single",
+        "abbreviation": "S",
+        "bracket": {"min": 182101, "max": 231250 },
+        "rate": "32"   
+
+    },
+    {
+        "status":  "Single",
+        "abbreviation": "S",
+        "bracket": {"min": 231251, "max": 578125 },
+        "rate": "35"   
+    },
+    {
+        "status":  "Single",
+        "abbreviation": "S",
+        "bracket": {"min": 578126, "max": 100000000000000000000000000  },
+        "rate": "37"
+         
+    },
+    {
+        "status":  "Married Filing Separately",
+        "abbreviation": "MFS",
+        "bracket": {"min": 0, "max": 11000  } , 
+        "rate": "10"
         
     },
     {
         "status":  "Married Filing Separately",
-        "abbreviation":"MFS",
-        "10": 11000,
-        "12": 44725,
-        "22": 95375,
-        "24": 182100,
-        "32": 231250,
-        "35": 578125,
-        "37": 578126
-        
+        "abbreviation": "MFS",
+        "bracket": {"min": 11001, "max": 44725  },
+        "rate": "12"
+      
+
+    },
+    {
+        "status":  "Married Filing Separately",
+        "abbreviation": "MFS",
+        "bracket": {"min": 44726, "max": 95375 },
+        "rate": "22"  
+
+    },
+    {
+        "status":  "Married Filing Separately",
+        "abbreviation": "MFS",
+        "bracket": {"min": 95376, "max": 182100 },
+        "rate": "24"
+    },
+    {
+        "status":  "Married Filing Separately",
+        "abbreviation": "MFS",
+        "bracket": {"min": 182101, "max": 231250 },
+        "rate": "32"   
+
+    },
+    {
+        "status":  "Married Filing Separately",
+        "abbreviation": "MFS",
+        "bracket": {"min": 231251, "max": 578125 },
+        "rate": "35"   
+    },
+    {
+        "status":  "Married Filing Separately",
+        "abbreviation": "MFS",
+        "bracket": {"min": 578126, "max": 1000000000000000000000  },
+        "rate": "37"
+         
+    },
+
+  
+    {
+        "status":  "Married Filing Joitly",
+        "abbreviation": "MFJ",
+        "bracket": {"min": 0, "max": 22000  },
+        "rate": "10"
     },
     {
         "status":  "Married Filing Joitly",
-        "abbreviation":"MFJ",
-        "10": 22000,
-        "12": 89450,
-        "22": 190750,
-        "24": 364200,
-        "32": 462500,
-        "35": 693750,
-        "37": 693751
-        
+        "abbreviation": "MFJ",
+        "bracket": {"min": 22001, "max": 89450  },
+        "rate": "12"
+    },
+    {
+        "status":  "Married Filing Joitly",
+        "abbreviation": "MFJ",
+        "bracket": {"min": 89451, "max": 190750  },
+        "rate": "22"
+    },
+    {
+        "status":  "Married Filing Joitly",
+        "abbreviation": "MFJ",
+        "bracket": {"min": 190751, "max": 364200  },
+        "rate": "24"
+    },
+    {
+        "status":  "Married Filing Joitly",
+        "abbreviation": "MFJ",
+        "bracket": {"min": 364201, "max": 462500  },
+        "rate": "32"
+    },
+    {
+        "status":  "Married Filing Joitly",
+        "abbreviation": "MFJ",
+        "bracket": {"min": 462501, "max": 693750  },
+        "rate": "35"
+    },
+    {
+        "status":  "Married Filing Joitly",
+        "abbreviation": "MFJ",
+        "bracket": {"min": 693750, "max": 10000000000000000000000000000  },
+        "rate": "37"
+    },
+
+   {
+        "status":  "Qualified Widow(er)",
+        "abbreviation": "QW",
+        "bracket": {"min":0, "max": 22000  },
+        "rate": "10"
     },
     {
         "status":  "Qualified Widow(er)",
-        "abbreviation":"QW",
-        "10": 22000,
-        "12": 89450,
-        "22": 190750,
-        "24": 364200,
-        "32": 462500,
-        "35": 693750,
-        "37": 693751
-        
+        "abbreviation": "QW",
+        "bracket": {"min": 22001, "max": 89450  },
+        "rate": "12"
+    },
+    {
+        "status":  "Qualified Widow(er)",
+        "abbreviation": "QW",
+        "bracket": {"min": 89451, "max": 190750  },
+        "rate": "22"
+    },
+    {
+        "status":  "Qualified Widow(er)",
+        "abbreviation": "QW",
+        "bracket": {"min": 190751, "max": 364200  },
+        "rate": "24"
+    },
+    {
+        "status":  "Qualified Widow(er)",
+        "abbreviation": "QW",
+        "bracket": {"min": 364201, "max": 462500  },
+        "rate": "32"
+    },
+    {
+        "status":  "Qualified Widow(er)",
+        "abbreviation": "QW",
+        "bracket": {"min": 462501, "max": 693750  },
+        "rate": "35"
+    },
+    {
+        "status":  "Qualified Widow(er)",
+        "abbreviation": "QW",
+        "bracket": {"min": 693750, "max": 100000000000000000000000000000  },
+        "rate": "37"
     }
-
-
 
 
 

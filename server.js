@@ -1,6 +1,6 @@
 import express from "express";
 import path from "path";
-import State from "./server/models/State.js";
+import Bracket from "./server/models/Bracket.js";
 const port = process.env.PORT || 5000;
 const app = express();
 import weatherRoutes from "./server/routes/weatherRoutes.js";
@@ -8,7 +8,7 @@ import LoginRoutes from "./server/routes/LoginRoutes.js";
 import { updateWeather } from "./server/repositories/WeatherRepository.js";
 import { updateForecast } from "./server/repositories/ForecastRepository.js";
 import connect from "./server/configs/connect.js";
-import data from "./data.json" assert { type: "json" };
+import data from "./fed.json" assert { type: "json" };
 import submitRoute from "./server/routes/submitRoute.js";
 
 const update = async () => {
@@ -19,12 +19,12 @@ const update = async () => {
 // const stateData = async() => {
 //    await data.map(async(i, ind) => {
 //     console.log(i.state);
-//      const res = await State.create(
+//      const res = await Bracket.create(
 //     {
-//       name: i.state,
-//       abbreviation: i.abbreviation,
-//                  lowestIncomeTaxBracket: i.lowestIncomeTaxBracket,
-//     highestIncomeTaxBracket: i.highestIncomeTaxBracket,
+//     status: i.status,
+//    abbreviation: i.abbreviation,
+//   bracket: {min: i.bracket.min, max: i.bracket.max},
+//    rate: i.rate
 //     }
 //     );
 //     console.log(res)
