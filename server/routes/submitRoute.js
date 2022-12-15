@@ -6,7 +6,11 @@ export default function submitRoute(app) {
 
 
   app.post("/api/submittax", async function (req, res, next) {
-    getTax(req.body.status, req.body.income, req.body.state)
-
+    console.log(req.body)
+   const re =  await getTax(req.body.status, req.body.income, req.body.state)
+   var afterTax = {
+    amount: await getTax(req.body.status, req.body.income, req.body.state),
+  };
+   await res.send(afterTax)
   });
 }

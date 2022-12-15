@@ -1,0 +1,32 @@
+/* g:hover{
+    fill:white;
+    stroke:blue;
+} */
+/* g:hover > path {
+    fill:white;
+    stroke:blue;
+}   */
+/* g{
+    fill:white;
+    stroke:black;
+    pointer-events:all;
+}  */
+.gFill {
+  fill: crimson;
+  stroke: black;
+}
+/* .gFill:nth-child(1),
+.gFill:nth-child(3) {
+  fill: blue;
+} */
+/* .gFill:nth-child(4) {
+  fill: blue;
+} */
+.gParent:hover .gFill:hover {
+  fill: white;
+  stroke: black;
+}
+.gParent:hover .gFill:not(:hover) {
+  fill: grey;
+  stroke: black;
+}

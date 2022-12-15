@@ -288,5 +288,24 @@
     "abbreviation": "WY",
     "lowestIncomeTaxBracket": "0",
     "highestIncomeTaxBracket": "0"
+  },
+  {
+    "state": "New Hampshire",
+    "abbreviation": "NH",
+    "lowestIncomeTaxBracket": "0",
+    "highestIncomeTaxBracket": "0.05"
+  },
+  {
+    "state": "Washington DC",
+    "abbreviation": "DC",
+    "lowestIncomeTaxBracket": "0.04",
+    "highestIncomeTaxBracket": "0.1075"
+  },
+  {
+    "state": "Maryland",
+    "abbreviation": "MD",
+    "lowestIncomeTaxBracket": "0.02",
+    "highestIncomeTaxBracket": "0.0575"
   }
+
 ]

@@ -5,7 +5,7 @@
         "abbreviation": "S",
         "bracket": {"min": 0, "max": 11000  } , 
         "rate": "10"
-        
+      
     },
     {
         "status":  "Single",
