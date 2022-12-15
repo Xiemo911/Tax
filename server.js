@@ -39,11 +39,11 @@ const update = async () => {
 LoginRoutes(app);
 weatherRoutes(app);
 submitRoute(app);
-if (process.env.NODE_ENV === "production") {
+
   app.use(express.static(path.join("client/build")));
   app.get("*", (req, res) => {
     res.sendfile(path.join("client/build/index.html"));
   });
-}
 
-app.listen(port, () => console.log("Example app is listening on port 5000."));
+
+app.listen(port, () => console.log(`Example app is listening on port ${port}`));
