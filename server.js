@@ -1,14 +1,11 @@
 import express from "express";
 import path from "path";
-import State from "./server/models/State.js";
 const port = process.env.PORT || 5000;
 const app = express();
 import weatherRoutes from "./server/routes/weatherRoutes.js";
 import LoginRoutes from "./server/routes/LoginRoutes.js";
 import { updateWeather } from "./server/repositories/WeatherRepository.js";
 import { updateForecast } from "./server/repositories/ForecastRepository.js";
-import connect from "./server/configs/connect.js";
-import data from "./data.json" assert { type: "json" };
 import submitRoute from "./server/routes/submitRoute.js";
 
 const update = async () => {
