@@ -1,9 +1,9 @@
-
 import mongoose from "mongoose";
-const conn_str = `mongodb+srv://histeel:6984@cluster0.u3l9bic.mongodb.net/?retryWrites=true&w=majority`;
-mongoose.set('strictQuery', false)
+import * as dotenv from "dotenv"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+dotenv.config();
+mongoose.set("strictQuery", false);
 export default mongoose.connect(
-  conn_str,
+  process.env.MONGODB_URI,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -16,4 +16,3 @@ export default mongoose.connect(
     }
   }
 );
-
