@@ -9,51 +9,64 @@ class App extends React.Component {
     stateForApi: "AL",
     statusForApi: "S",
     incomeForApi: "",
-    deductionsForApi: ""
+    deductionsForApi: 0,
   };
 
-
-
-  
-
-
-
-
-
-
-
-
-
-
-  // addDataForApi = async (a, e) => {
-  //   await this.setState({a: e.target.value})
+  // addDataForApi = (e, a) => {
+  //   this.setState({a: e.target.value})
   // }
 
-  addDeductionsForApi = async (e) => {
-    return await this.setState({ deductionsForApi: e.target.value }
-    );
+  addDeductionsForApi = (e) => {
+    if (e.target.value.length === 0 || e.target.value === 0) {
+      return this.setState({ deductionsForApi: 0 });
+    } else {
+      if (isNaN(e.target.value)) {
+        return this.setState({ deductionsForApi: 0 });
+      }
+
+      return this.setState({ deductionsForApi: e.target.value });
+    }
   };
 
-  addStateForApi = async (e) => {
-    return await this.setState({ stateForApi: e.target.value });
+  addStateForApi = (e) => {
+    return this.setState({ stateForApi: e.target.value });
   };
 
-  addStatusForApi = async (e) => {
-    return await this.setState({ statusForApi: e.target.value });
+  addStatusForApi = (e) => {
+    return this.setState({ statusForApi: e.target.value });
   };
 
-  addIncomeForApi = async (e) => {
-    return await this.setState({ incomeForApi: e.target.value }
-    );
+  addIncomeForApi = (e) => {
+    return this.setState({ incomeForApi: e.target.value });
   };
 
-  onclickStateForApi = async (e) => {
-     document.getElementById('selectState').value = e.target.id
-    return await this.setState({ stateForApi: e.target.id });
+  onclickStateForApi = (e) => {
+    document.getElementById("selectState").value = e.target.id;
+    return this.setState({ stateForApi: e.target.id });
   };
 
-  checkAfterTax = async (a) => {
-    await this.setState({ amount: "After Tax: $" + parseInt(a) });
+  checkAfterTax = (a) => {
+    if (
+      parseInt(this.state.deductionsForApi) + parseInt(a) >=
+      parseInt(this.state.incomeForApi)
+    ) {
+      return this.setState({
+        amount: `After Tax $: ${parseInt(
+          this.state.incomeForApi
+        ).toLocaleString()}` +'\n'+ `Available Deductions Next 3 Year: $${
+          Math.abs(parseInt(this.state.incomeForApi)-
+          (parseInt(this.state.deductionsForApi) + parseInt(a))).toLocaleString()
+        }` ,
+      });
+    } else {
+      return this.setState({
+        amount:
+          "After Tax: $" +
+          (
+            parseInt(a) + parseInt(this.state.deductionsForApi)
+          ).toLocaleString(),
+      });
+    }
   };
 
   render() {
@@ -71,6 +84,7 @@ class App extends React.Component {
           statusForApi={st.statusForApi}
           incomeForApi={st.incomeForApi}
           addDataForApi={this.addDataForApi}
+          addDeductionsForApi={this.addDeductionsForApi}
         />
       </div>
     );

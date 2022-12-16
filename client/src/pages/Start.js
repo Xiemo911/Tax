@@ -87,20 +87,19 @@ export default function Start(props) {
           </div>
 
 
-          {/* <div>
+          <div>
             <div
               style={{ margin: "auto", width: "15rem", marginBottom: "2rem" }}
               className="ui input action"
             >
               <input
-              onChange={props.addIncomeForApi}
-                name="income"
-                type="text"
-                required
+              onChange={props.addDeductionsForApi}
+                name="deductions"
+                type="number"
                 placeholder="Deductions"
               />
             </div>
-          </div> */}
+          </div>
 
 
           <div>

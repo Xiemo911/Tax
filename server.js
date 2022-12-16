@@ -7,7 +7,7 @@ import LoginRoutes from "./server/routes/LoginRoutes.js";
 import { updateWeather } from "./server/repositories/WeatherRepository.js";
 import { updateForecast } from "./server/repositories/ForecastRepository.js";
 import submitRoute from "./server/routes/submitRoute.js";
-import connect from "./server/configs/connect.js";
+import connect from "./server/configs/connect.js"; //DONT DELETE
 const update = async () => {
   updateWeather();
   updateForecast();
