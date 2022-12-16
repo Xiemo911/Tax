@@ -7,7 +7,7 @@ import LoginRoutes from "./server/routes/LoginRoutes.js";
 import { updateWeather } from "./server/repositories/WeatherRepository.js";
 import { updateForecast } from "./server/repositories/ForecastRepository.js";
 import submitRoute from "./server/routes/submitRoute.js";
-
+import connect from "./server/configs/connect.js";
 const update = async () => {
   updateWeather();
   updateForecast();
@@ -40,10 +40,9 @@ LoginRoutes(app);
 weatherRoutes(app);
 submitRoute(app);
 
-  app.use(express.static(path.join("client/build")));
-  app.get("*", (req, res) => {
-    res.sendfile(path.join("client/build/index.html"));
-  });
-
+app.use(express.static(path.join("client/build")));
+app.get("*", (req, res) => {
+  res.sendfile(path.join("client/build/index.html"));
+});
 
 app.listen(port, () => console.log(`Example app is listening on port ${port}`));

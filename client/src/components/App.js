@@ -53,7 +53,7 @@ class App extends React.Component {
   };
 
   checkAfterTax = async (a) => {
-    await this.setState({ amount: "After Tax: $" + parseInt(a.toString()) });
+    await this.setState({ amount: "After Tax: $" + parseInt(a) });
   };
 
   render() {
